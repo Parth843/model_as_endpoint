@@ -5,7 +5,7 @@ import mlflow
 import mlflow.sklearn
 import flask
 
-model_path = "models/logit_games_v1"
+model_path = "/home/ec2-user/source/model_as_endpoint/models/logit_games_v1"
 model  = mlflow.sklearn.load_model(model_path)
 
 app = flask.Flask(__name__)
